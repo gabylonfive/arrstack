@@ -1,0 +1,90 @@
+services:
+  radarr:
+    image: linuxserver/radarr
+    container_name: radarr
+    ports:
+      - "7878:7878"
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=${TZ}
+    volumes:
+      - /media1/config/radarr:/config
+      - /media1/movies:/movies
+      - /media1/downloads:/downloads
+    restart: unless-stopped
+
+  sonarr:
+    image: linuxserver/sonarr
+    container_name: sonarr
+    ports:
+      - "8989:8989"
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=${TZ}
+    volumes:
+      - /media1/config/sonarr:/config
+      - /media1/tv:/tv
+      - /media1/downloads:/downloads
+    restart: unless-stopped
+
+  sabnzbd:
+    image: linuxserver/sabnzbd
+    container_name: sabnzbd
+    ports:
+      - "8080:8080"
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=${TZ}
+    volumes:
+      - /media1/config/sabnzbd:/config
+      - /media1/downloads:/downloads
+      - /media1/incomplete-downloads:/incomplete-downloads
+    restart: unless-stopped
+
+  plex:
+    image: linuxserver/plex
+    container_name: plex
+    network_mode: host
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - VERSION=docker
+      - TZ=${TZ}
+    volumes:
+      - /media1/config/plex:/config
+      - /media1/tv:/local-tv
+      - /media1/movies:/local-movies
+      - /mnt/dsmplex/tv:/smb-tv
+      - /mnt/dsmplex/movies:/smb-movies
+    restart: unless-stopped
+
+
+
+  overseerr:
+    image: linuxserver/overseerr
+    container_name: overseerr
+    ports:
+      - "5055:5055"
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=${TZ}
+    volumes:
+      - /media1/config/overseerr:/config
+    restart: unless-stopped
+
+  tautulli:
+    image: linuxserver/tautulli
+    container_name: tautulli
+    ports:
+      - "8181:8181"
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=${TZ}
+    volumes:
+      - /media1/config/tautulli:/config
+    restart: unless-stopped
