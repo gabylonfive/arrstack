@@ -52,7 +52,7 @@ Overseerr: http://<your-ip>:5055
 Tautulli: http://<your-ip>:8181
 ```
 
-📂 Folder Structure
+**Folder Structure**
 The script will create a basic folder structure under /mnt/media/:
 
 ```
@@ -70,7 +70,7 @@ The script will create a basic folder structure under /mnt/media/:
 
 You can add your media to the movies and tv directories, and completed downloads go into downloads.
 
-🌐 Ports
+**Ports**
 
 | Service     | Port   |
 |-------------|--------|
