@@ -51,7 +51,7 @@ HOSTNAME=$(hostname -I | awk '{print $1}')
 echo
 echo " arr stack is up and running!"
 echo
-echo " acceses services here:"
+echo " access services here:"
 echo "--------------------------------------------"
 printf "%-12s %-40s\n" "service" "url"
 echo "--------------------------------------------"
