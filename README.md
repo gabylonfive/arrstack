@@ -15,7 +15,7 @@
 
 - Docker
 - Docker-Compose
-- A directory for your media files (below code uses media1, but change to whatever you want.)
+- A directory for your media files (below code uses /mnt/media, but change to whatever you want.)
 
 ##  How to set it up
 
