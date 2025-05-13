@@ -19,10 +19,11 @@
 
 ##  How to set it up
 
-1. **Clone this repo:**
-   First, grab this repo onto your system:
-   ```bash
+Clone this repo:
+
+```bash
    git clone https://github.com/gabylonfive/arrstack.git
+```
 
 Make the script executable:
 You’ll need to make the arr_stack_build.sh script executable:
