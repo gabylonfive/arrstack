@@ -30,7 +30,7 @@ You’ll need to make the arr_stack_build.sh script executable:
 chmod +x arr_stack_build.sh
 ```
 Run the script:
-Run the script and let it do its magic. It’ll set up the directories, create a .env file with your user info, and bring up the stack:
+Run the script and let it do its thing. It’ll set up the directories, create a .env file with your user info, and bring up the stack:
 ```
 ./arr_stack_build.sh
 ```
