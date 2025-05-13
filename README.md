@@ -23,7 +23,6 @@
    First, grab this repo onto your system:
    ```bash
    git clone https://github.com/gabylonfive/arrstack.git
-   cd arr_stack_build
 
 Make the script executable:
 You’ll need to make the arr_stack_build.sh script executable:
