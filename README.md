@@ -1,4 +1,4 @@
-# easy arr-stack
+# 10-second arrstack
 
  This repo sets up an arr stack using Docker and the following containers:
  
@@ -13,8 +13,9 @@
 
 ##  What you'll need
 
-- **Docker** and **Docker Compose** installed on your machine.
-- A directory for your media files (we'll use `/mnt/media` by default, but you can change this in the script).
+- Docker
+- Docker-Compose
+- A directory for your media files (below code uses media1, but change to whatever you want.)
 
 ##  How to set it up
 
@@ -22,20 +23,21 @@
    First, grab this repo onto your system:
    ```bash
    git clone https://github.com/gabylonfive/arrstack.git
-   cd arr_stack
+   cd arr_stack_build
 
 Make the script executable:
-You’ll need to make the arr_stack.sh script executable:
+You’ll need to make the arr_stack_build.sh script executable:
 ```
-chmod +x arr_stack.sh
+chmod +x arr_stack_build.sh
 ```
 Run the script:
 Run the script and let it do its magic. It’ll set up the directories, create a .env file with your user info, and bring up the stack:
 ```
-./arr_stack.sh
+./arr_stack_build.sh
 ```
 Access your services:
 Once everything’s up and running, you can access the services via the following URLs (replace <your-ip> with the IP address or hostname of your Docker host):
+
 ```
 Radarr: http://<your-ip>:7878
 
@@ -51,7 +53,7 @@ Tautulli: http://<your-ip>:8181
 ```
 
 📂 Folder Structure
-The script will create a basic folder structure under /mnt/media/:
+The script will create a basic folder structure under /mnt/media1/:
 
 ```
 /mnt/media/
@@ -66,12 +68,9 @@ The script will create a basic folder structure under /mnt/media/:
 
 ```
 
-
-
 You can add your media to the movies and tv directories, and completed downloads go into downloads.
 
 🌐 Ports
-Here are the ports exposed for each app:
 
 | Service     | Port   |
 |-------------|--------|
@@ -83,19 +82,6 @@ Here are the ports exposed for each app:
 | **Tautulli** | 8181 |
 
 ⚙️ Customizing
-You can easily modify the stack by changing settings in the docker-compose.yml or the .env file (like the timezone or user permissions). Just rerun the arr_stack.sh script if you make changes!
-
-🤖 More Info
-Radarr: Movie management and downloader.
-
-Sonarr: TV series management and downloader.
-
-SABnzbd: Usenet downloader.
-
-Plex: Media server to stream your content.
-
-Overseerr: Request management for Plex users.
-
-Tautulli: Plex stats and analytics.
+You can easily modify the stack by changing settings in the docker-compose.yml or the .env file (like the timezone or user permissions).
 
 
