@@ -20,21 +20,21 @@
 ##  How to set it up
 
 Clone this repo:
-
 ```bash
    git clone https://github.com/gabylonfive/arrstack.git
 ```
 
 Make the script executable:
-You’ll need to make the arr_stack_build.sh script executable:
 ```
 chmod +x arr_stack_build.sh
 ```
+
 Run the script:
 Run the script and let it do its thing. It’ll set up the directories, create a .env file with your user info, and bring up the stack:
 ```
 ./arr_stack_build.sh
 ```
+
 Access your services:
 Once everything’s up and running, you can access the services via the following URLs (replace <your-ip> with the IP address or hostname of your Docker host):
 
