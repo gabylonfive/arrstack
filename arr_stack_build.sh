@@ -2,7 +2,7 @@
 
 set -e
 
-BASE_DIR="/mnt/media"
+BASE_DIR="/mnt/media1"
 CONFIG_DIRS=(
   radarr
   sonarr
