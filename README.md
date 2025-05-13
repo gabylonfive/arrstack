@@ -80,7 +80,6 @@ You can add your media to the movies and tv directories, and completed downloads
 | **Overseerr** | 5055 |
 | **Tautulli** | 8181 |
 
-⚙️ Customizing
-You can easily modify the stack by changing settings in the docker-compose.yml or the .env file (like the timezone or user permissions).
+
 
 
