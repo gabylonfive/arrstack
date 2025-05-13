@@ -1,13 +1,15 @@
 # easy arr-stack
 
  This repo sets up an arr stack using Docker and the following containers:
-
+ 
+```
  plex - media servier
  sabnzbd - nzbd transfer controller
  radarr - movie indexer and organization client
  sonarr - tv indexer and organization client
  overseer - request management server and imdb scraper
  tautulli - metrics and usage monitoring
+```
 
 ##  What you'll need
 
