@@ -1,10 +1,10 @@
 # 10-second arrstack
 
- This repo sets up an arr stack using Docker and the following containers:
+ This simple script sets up an arr stack using Docker and the following containers:
  
 ```
  plex - media servier
- sabnzbd - nzbd transfer controller
+ sabnzbd - nzb transfer manager
  radarr - movie indexer and organization client
  sonarr - tv indexer and organization client
  overseer - request management server and imdb scraper
