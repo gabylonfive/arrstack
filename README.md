@@ -52,7 +52,7 @@ Tautulli: http://<your-ip>:8181
 ```
 
 📂 Folder Structure
-The script will create a basic folder structure under /mnt/media1/:
+The script will create a basic folder structure under /mnt/media/:
 
 ```
 /mnt/media/
