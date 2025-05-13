@@ -36,6 +36,7 @@ Run the script and let it do its thing. It’ll set up the directories, create a
 ```
 
 Access your services:
+
 Once everything’s up and running, you can access the services via the following URLs (replace <your-ip> with the IP address or hostname of your Docker host):
 
 ```
@@ -53,6 +54,7 @@ Tautulli: http://<your-ip>:8181
 ```
 
 **Folder Structure**
+
 The script will create a basic folder structure under /mnt/media/:
 
 ```
