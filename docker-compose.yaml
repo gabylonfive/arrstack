@@ -57,8 +57,8 @@ services:
       - /media1/config/plex:/config
       - /media1/tv:/local-tv
       - /media1/movies:/local-movies
-      - /mnt/dsmplex/tv:/smb-tv
-      - /mnt/dsmplex/movies:/smb-movies
+     # - /mnt/dsmplex/tv:/smb-tv
+     # - /mnt/dsmplex/movies:/smb-movies
     restart: unless-stopped
 
 
