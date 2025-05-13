@@ -9,9 +9,9 @@ services:
       - PGID=${PGID}
       - TZ=${TZ}
     volumes:
-      - /media1/config/radarr:/config
-      - /media1/movies:/movies
-      - /media1/downloads:/downloads
+      - /media/config/radarr:/config
+      - /media/movies:/movies
+      - /media/downloads:/downloads
     restart: unless-stopped
 
   sonarr:
@@ -24,9 +24,9 @@ services:
       - PGID=${PGID}
       - TZ=${TZ}
     volumes:
-      - /media1/config/sonarr:/config
-      - /media1/tv:/tv
-      - /media1/downloads:/downloads
+      - /media/config/sonarr:/config
+      - /media/tv:/tv
+      - /media/downloads:/downloads
     restart: unless-stopped
 
   sabnzbd:
@@ -39,9 +39,9 @@ services:
       - PGID=${PGID}
       - TZ=${TZ}
     volumes:
-      - /media1/config/sabnzbd:/config
-      - /media1/downloads:/downloads
-      - /media1/incomplete-downloads:/incomplete-downloads
+      - /media/config/sabnzbd:/config
+      - /media/downloads:/downloads
+      - /media/incomplete-downloads:/incomplete-downloads
     restart: unless-stopped
 
   plex:
@@ -54,9 +54,9 @@ services:
       - VERSION=docker
       - TZ=${TZ}
     volumes:
-      - /media1/config/plex:/config
-      - /media1/tv:/local-tv
-      - /media1/movies:/local-movies
+      - /media/config/plex:/config
+      - /media/tv:/local-tv
+      - /media/movies:/local-movies
      # - /mnt/dsmplex/tv:/smb-tv
      # - /mnt/dsmplex/movies:/smb-movies
     restart: unless-stopped
@@ -73,7 +73,7 @@ services:
       - PGID=${PGID}
       - TZ=${TZ}
     volumes:
-      - /media1/config/overseerr:/config
+      - /media/config/overseerr:/config
     restart: unless-stopped
 
   tautulli:
@@ -86,5 +86,5 @@ services:
       - PGID=${PGID}
       - TZ=${TZ}
     volumes:
-      - /media1/config/tautulli:/config
+      - /media/config/tautulli:/config
     restart: unless-stopped
